@@ -28,6 +28,7 @@ class PaypalController extends Controller
             if ($_POST['address_status'] == 'confirmed') {
                 // Check outh POST variable and insert your logic here
                 \Log::info("payment verified and inserted to db");
+                \Log::info($_POST);
             }
         } else {
             \Log::info("Some thing went wrong in the payment !");
