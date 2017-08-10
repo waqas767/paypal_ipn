@@ -16,4 +16,4 @@ Route::get('/', function () {
 });
 
 
-Route::get('paypal_ipn', 'PaypalController@paypalIpn');
+Route::post('paypal_ipn', 'PaypalController@paypalIpn');
