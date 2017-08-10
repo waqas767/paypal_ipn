@@ -34,4 +34,10 @@ class PaypalController extends Controller
             \Log::info("Some thing went wrong in the payment !");
         }
     }
+
+
+    public function handle(Request $request)
+    {
+        \Log::info($request);
+    }
 }

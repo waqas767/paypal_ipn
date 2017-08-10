@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 
 Route::post('paypal_ipn', 'PaypalController@paypalIpn');
+
+Route::post('webhook', 'PaypalController@handle');
